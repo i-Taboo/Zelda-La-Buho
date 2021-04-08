@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
+    <meta charset="UTF-8">
+    <meta name="vewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina web</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'><link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;0,800;1,700&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+    <!--Cabeza de la pagina web-->
+    <header class="header" id="inicio">
+        
+        <nav class="menu-navegacion oculto" id="menu">
+            <h1 class="titulo-de-menu"href="">Menú</h1>
+            <div class="linea"></div>
+            <a class="botonmenu" href="#inicio"> <img src="img/bx-home.svg" class="icon1" alt=""> Inicio</a> 
+            <a class="botonmenu" href="#servicio"> <img src="img/red.svg" class="icon1" alt=""> Detalles</a>
+            <a class="botonmenu" href="#portafolio"> <img src="img/bx-image.svg" class="icon1" alt=""> Galeria</a>
+            <a class="botonmenu" href="#expertos"><img src="img/bx-message-check.svg" class="icon1" alt=""> Experto en</a>
+            <div class="linea   "></div>
+            <a class="botonmenu" href="#contactos"><img src="img/bxs-phone-call.svg" class="icon1" alt=""> Contactenos</a>
+        
+        </nav>
+        <img src="img/carne.svg" alt="" class="hamburger" id="cmdMenu" onclick="muestramenu(this)">
+        <div class="contenedor head">
+            <h1 class="titulo">Buho Magistral dijo el pollo</h1>
+            <p class="copy">subtitulo magistral</p>
+        </div>
+    </header>
+    <main>
+        <!--Primera parte de la pagina-->
+        <section class="contenedor" id="servicio">
+            <h2 class="subtitulo">Zelda es </h2>
+            <div class="contenedor-servicio">
+                <img src="img/10x-featured-social-media-image-size.png" alt="">
+                   <div class="checklist-servicio">
+                       <div class="service">
+                           <h3 class="n-service"><span class="number">1</span>Zelda</h3>
+                        <p>Es la zelda</p>
+                           <h3 class="n-service"><span class="number">2</span>No solo es Zelda</h3>
+                        <p>Es La Zelda</p>
+                           <h3 class="n-service"><span class="number">3</span>Tactica</h3>
+                        <p>Y encima tactica</p>
+                        </div>
+                   </div>
+            </div>
+        </section>
+        <!--segunda parte de la pagina-->
+        <section class="gallery" id="portafolio">
+            <div class="contenedor">
+                <h2 class="subtitulo">Galeria</h2>
+                <div class="contenedor-galeria">
+                    <img src="img/10x-featured-social-media-image-size.png" alt=""class="img-galeria">
+                    <img src="img/10x-featured-social-media-image-size.png" alt=""class="img-galeria">
+                    <img src="img/10x-featured-social-media-image-size.png" alt=""class="img-galeria">
+                    <img src="img/10x-featured-social-media-image-size.png" alt=""class="img-galeria">
+                    <img src="img/10x-featured-social-media-image-size.png" alt=""class="img-galeria">
+                    <img src="img/10x-featured-social-media-image-size.png" alt=""class="img-galeria">
+                </div>
+            </div>
+        </section>
+
+         <!--<section class="imagen-light">
+             <img src="img/close.svg" alt="" class="close">
+             <img src="img/Buho.jpg" alt="" class="agregar-imagen">
+         </section> -->
+
+         <!--Contenedor de mas informacion, tercera parte de la web-->
+         <section class="contenedor" id="expertos">
+             <h2 class="subtitulo">Expertos en:</h2>
+             <section class="experts">
+                 <div class="cont-expertos">
+                     <img src="img/Buho.jpg" alt="">
+                     <h3 class="n-expert">Buhos</h3>
+                    </div>
+                    <div class="cont-expertos">
+                        <img src="img/Buho.jpg" alt="">
+                        <h3 class="n-expert">Con</h3>
+                       </div>
+                       <div class="cont-expertos">
+                        <img src="img/Buho.jpg" alt="">
+                        <h3 class="n-expert">Sopa</h3>
+                       </div>
+             </section>
+         </section>
+
+    </main>
+    <!--Seccion de contacto-->
+    <footer class="contactos" id="contactos">
+        <div class="contenedor footer-content">
+            <div class="contactanos">
+                <h2 class="brand">El victor lo hizo</h2>
+                <p>Buhos todos dijo wika</p>
+            </div>
+            <div class="redes-sociales">
+                <a href="https://es-la.facebook.com/" class="redes-sociales-icon">
+                <i class='bx bxl-facebook-square' ></i>
+             </a>
+                <a href="https://twitter.com/?lang=es" class="redes-sociales-icon">
+                    <i class='bx bxl-twitter' ></i>
+             </a>
+                <a href="https://www.instagram.com/?hl=es" class="redes-sociales-icon">
+                    <i class='bx bxl-instagram' ></i>
+             </a>
+            </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+    
+
+
+
+ 
+</body>
+
+    </html>
