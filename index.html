@@ -5,7 +5,7 @@
     <script src="js/lightbox.js"></script>
     <meta charset="UTF-8">
     <meta name="vewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina web</title>
+    <title>Zelda la buho real</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'><link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;0,800;1,700&display=swap" rel="stylesheet">
@@ -13,40 +13,41 @@
 </head>
 <body>
     <!--Cabeza de la pagina web-->
-    <header class="header" id="inicio">
-        
-        <nav class="menu-navegacion oculto" id="menu">
-            <h1 class="titulo-de-menu"href="">Menú</h1>
-            <div class="linea"></div>
-            <a class="botonmenu" href="#inicio"> <img src="img/bx-home.svg" class="icon1" alt=""> Inicio</a> 
-            <a class="botonmenu" href="#servicio"> <img src="img/red.svg" class="icon1" alt=""> Detalles</a>
-            <a class="botonmenu" href="#portafolio"> <img src="img/bx-image.svg" class="icon1" alt=""> Galeria</a>
-            <a class="botonmenu" href="#expertos"><img src="img/bx-message-check.svg" class="icon1" alt=""> Experto en</a>
-            <div class="linea   "></div>
-            <a class="botonmenu" href="#contactos"><img src="img/bxs-phone-call.svg" class="icon1" alt=""> Contactenos</a>
-        
-        </nav>
-        <img src="img/carne.svg" alt="" class="hamburger" id="cmdMenu" onclick="muestramenu(this)">
+    <header onclick="removermenu(this)"class="header" id="inicio">
         <div class="contenedor head">
-            <h1 class="titulo">Buho Magistral dijo el pollo</h1>
-            <p class="copy">subtitulo magistral</p>
-        </div>
+        <h1 class="titulo">Zelda</h1>
+        <p class="copy">La Buho Real</p>
+    </div>
     </header>
+    <nav class="menu-navegacion oculto" id="menu">
+        <h1 class="titulo-de-menu"href="" >Menú</h1>
+        <div class="linea"></div>
+        <a class="botonmenu bot1" href="#inicio" onclick="removermenu(this)"> <img src="img/bx-home.svg" class="icon1" alt=""> Inicio</a> 
+        <a class="botonmenu" href="#servicio" onclick="removermenu(this)"> <img src="img/red.svg" class="icon1" alt=""> Detalles</a>
+        <a class="botonmenu" href="#portafolio" onclick="removermenu(this)"> <img src="img/bx-image.svg" class="icon1" alt=""> Galeria</a>
+        <a class="botonmenu" href="#expertos" onclick="removermenu(this)"><img src="img/bx-message-check.svg" class="icon1" alt=""> Experto en</a>
+        <div class="linea   "></div>
+        <a class="botonmenu" href="#contactos" onclick="removermenu(this)"><img src="img/bxs-phone-call.svg" class="icon1" alt=""> Contactenos</a>
+    
+    </nav>
+    <img src="img/carne.svg" alt="" class="hamburger" id="cmdMenu" onclick="muestramenu(this)">
+    <div class="contenedor head">
+       
+    </div>
+    <div onclick="removermenu(this)">
+
+
     <main>
         <!--Primera parte de la pagina-->
         <section class="contenedor" id="servicio">
             <h2 class="subtitulo">Zelda es </h2>
             <div class="contenedor-servicio">
-                <img src="img/10x-featured-social-media-image-size.png" alt="">
+                <img src="img/Zelda5.jpg" alt="">
                    <div class="checklist-servicio">
                        <div class="service">
-                           <h3 class="n-service"><span class="number">1</span>Zelda</h3>
-                        <p>Es la zelda</p>
-                           <h3 class="n-service"><span class="number">2</span>No solo es Zelda</h3>
-                        <p>Es La Zelda</p>
-                           <h3 class="n-service"><span class="number">3</span>Tactica</h3>
-                        <p>Y encima tactica</p>
-                        </div>
+                        <p>Zelda es un buho real, esta especie de buho es la mas grande del planeta, y a pesar de su tamaño depende de como le trates puede ser en extremo manzo, como por ejemplo Zelda, ella es completamente salvaje, pero a pesar de eso es muy amable, y si fue llamada Zelda por el videojuego</p>
+                    <p>Hoy dia, Zelda esta siendo entrenada en el arte de la cetreria, una forma de entrenamiento en el que no se le entrena pegandole, sino por recompenzas, para mas informacion puede <a href="#contactos"> comunicarse </a> con nosotros</p>  
+                    </div>
                    </div>
             </div>
         </section>
@@ -55,7 +56,7 @@
             <div class="contenedor">
                 <h2 class="subtitulo">Galeria</h2>
                 <div class="contenedor-galeria">
-                    <img src="img/10x-featured-social-media-image-size.png" alt=""class="img-galeria">
+                    <img onclick="sopas(this)" src="img/zelda1.jpg" alt=""class="img-galeria" id="img-galeria" >
                     <img src="img/10x-featured-social-media-image-size.png" alt=""class="img-galeria">
                     <img src="img/10x-featured-social-media-image-size.png" alt=""class="img-galeria">
                     <img src="img/10x-featured-social-media-image-size.png" alt=""class="img-galeria">
@@ -65,10 +66,10 @@
             </div>
         </section>
 
-         <!--<section class="imagen-light">
-             <img src="img/close.svg" alt="" class="close">
-             <img src="img/Buho.jpg" alt="" class="agregar-imagen">
-         </section> -->
+         <section class="imagen-light oculto" id="img-light">
+             <img src="img/close.svg" alt="" class="close" onclick="cerrarimagen(this)">
+             <img src="img/zelda1.jpg" alt="" class="imgb1">
+         </section>
 
          <!--Contenedor de mas informacion, tercera parte de la web-->
          <section class="contenedor" id="expertos">
@@ -112,7 +113,7 @@
         <div class="line"></div>
     </footer>
     
-
+</div>
 
 
  

@@ -21,7 +21,7 @@ body{
 
 header{
     height: 100vh;
-    background-image: linear-gradient(120deg, rgba(248, 132, 0, 0.24) 0%, #c2e9fb 100%), url(../img/Buho.jpg);
+    background-image: linear-gradient(120deg, #ecab6f2c 0%, #7d68da21 100%), url(../img/zelda3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -30,19 +30,21 @@ header{
 }
 
 .head{
+    text-align: center;
     padding: 0;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: rgb(95, 54, 0);
+    color: rgb(153, 132, 105);
+    font-size: 7vw;
 }
 
 .hamburger{
     position: fixed;
-    top: 30px;
-    right: 30px;
+    top: 11px;
+    right: 11px;
     background: #ffff;
     width: 40px;
     height: 40px;
@@ -54,7 +56,7 @@ header{
 
     .hamburger:hover{
         
-        background-image: linear-gradient(120deg, rgba(248, 132, 0, 0.651) 0%, #c2e9fbd0 100%), url(../img/Buho.jpg);
+        background-image: linear-gradient(to top, #f43b4733 0%, #443a944b 100%);
     }
 
 .menu-navegacion{
@@ -63,7 +65,7 @@ header{
     right: 0;
     width: 25vw;
     height: 100%;
-    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-image: linear-gradient(to top, #f43b47c4 0%, #443a94d8 100%);
     display:flex;
     flex-direction: column;
     /*justify-content: space-evenly;*/
@@ -124,13 +126,13 @@ margin-bottom: 10px;
 }
 
 .titulo{
-    font-size: 60px;
+    font-size: 90px;
     margin-bottom: 15px;
 
 }
 
 .copy{
-    font-weight: 300;
+    font-weight: 600;
     font-size: 25px;
 }
 
@@ -138,7 +140,7 @@ margin-bottom: 10px;
 
 .subtitulo{
     text-align: center;
-    font-weight: 300;
+    font-weight: 600;
     color: #9f8ad0;
     margin-bottom: 40px;
     font-size: 40px;
@@ -187,7 +189,12 @@ margin-bottom: 10px;
     flex-wrap: wrap;
 }
 
+.imgb1{
+    width: 70%;
+}
+
 .img-galeria{
+    object-fit: cover;
     width: 32%;
     display: block;
     margin-left: 15px;
@@ -195,7 +202,7 @@ margin-bottom: 10px;
     box-shadow: rgba(0, 0, 0, .5);
 }
 
-/*.imagen-light{
+.imagen-light{
     position: fixed;
     background: rgba(0, 0, 0, .5);
     width: 100%;
@@ -205,14 +212,13 @@ margin-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-}*/
+}
 
-.agregar-imagen{
-    width: 60%;
-    border-radius: 10px;
-    transform: scale(0);
+.imagen-light{
+     transform: scale(0);
     transition: transform .3s .2s;
 }
+
 
 .mostrarimagen{
     transform: scale(1);
@@ -260,7 +266,7 @@ margin-bottom: 10px;
 }
 
 footer{
-    background: #9f8ad0;
+    background-image: linear-gradient(to top, #f43b47af 0%, #443a94bd 100%);
     justify-content: space-between;
     align-items: center;
     flex-wrap: warp;
@@ -326,3 +332,18 @@ background: #fff;
 margin-bottom: 60px;
 }
 
+@media screen and (max-width:800px){
+    .menu-navegacion{
+        width: 50vw;
+        }
+    .titulo{
+        font-size: 30px;
+    }
+    .contenedor-servicio img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .checklist-servicio{
+        width: 80px;
+    }
+}

@@ -7,6 +7,12 @@
         document.getElementById("menu").classList.add("oculto");
         e.classList.remove("rotado");
     }
-    
-        
+
     }
+
+    function removermenu(e) {
+        document.getElementById("menu").classList.add("oculto");
+        document.getElementById("cmdMenu").classList.remove("rotado");
+
+        }
+    
