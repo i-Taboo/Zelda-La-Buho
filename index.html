@@ -3,6 +3,7 @@
 <head>
     <script src="js/menu.js"></script>
     <script src="js/lightbox.js"></script>
+    <script src="js/Otros.js"></script>
     <meta charset="UTF-8">
     <meta name="vewport" content="width=device-width, initial-scale=1.0">
     <title>Zelda la buho real</title>
@@ -42,7 +43,7 @@
         <section class="contenedor" id="servicio">
             <h2 class="subtitulo">Zelda es </h2>
             <div class="contenedor-servicio">
-                <img src="img/Zelda5.jpg" alt="">
+                <img onclick="imgz7(this)" src="img/Zelda5.jpg" alt="">
                    <div class="checklist-servicio">
                        <div class="service">
                         <p>Zelda es un buho real, esta especie de buho es la mas grande del planeta, y a pesar de su tamaño depende de como le trates puede ser en extremo manzo, como por ejemplo Zelda, ella es completamente salvaje, pero a pesar de eso es muy amable, y si fue llamada Zelda por el videojuego</p>
@@ -56,36 +57,66 @@
             <div class="contenedor">
                 <h2 class="subtitulo">Galeria</h2>
                 <div class="contenedor-galeria">
-                    <img onclick="sopas(this)" src="img/zelda1.jpg" alt=""class="img-galeria" id="img-galeria" >
-                    <img src="img/10x-featured-social-media-image-size.png" alt=""class="img-galeria">
-                    <img src="img/10x-featured-social-media-image-size.png" alt=""class="img-galeria">
-                    <img src="img/10x-featured-social-media-image-size.png" alt=""class="img-galeria">
-                    <img src="img/10x-featured-social-media-image-size.png" alt=""class="img-galeria">
-                    <img src="img/10x-featured-social-media-image-size.png" alt=""class="img-galeria">
+                    <img onclick="imgz1(this)" src="img/zelda1.jpg" alt=""class="img-galeria">
+                    <img onclick="imgz2(this)" src="img/zelda6.jpg" alt=""class="img-galeria">
+                    <img onclick="imgz3(this)" src="img/zelda7.jpg" alt=""class="img-galeria">
+                    <img onclick="imgz4(this)" src="img/zelda8.jpg" alt=""class="img-galeria">
+                    <img onclick="imgz5(this)" src="img/zelda9.jpg" alt=""class="img-galeria">
+                    <img onclick="imgz6(this)" src="img/zelda10.jpg" alt=""class="img-galeria">
                 </div>
             </div>
         </section>
-
-         <section class="imagen-light oculto" id="img-light">
+        <!--mostrar imagenes de galeria-->
+        <section>
+         <div class="imagen-light oculto" id="imagen-galeria1">
              <img src="img/close.svg" alt="" class="close" onclick="cerrarimagen(this)">
-             <img src="img/zelda1.jpg" alt="" class="imgb1">
-         </section>
-
+             <img src="img/zelda1.jpg" alt="" class="imgb">
+         </div>
+         
+         <div class="imagen-light oculto" id="imagen-galeria2">
+            <img src="img/close.svg" alt="" class="close" onclick="cerrarimagen(this)">
+            <img src="img/zelda6.jpg" alt="" class="imgb">
+        </div>
+        
+        <div class="imagen-light oculto" id="imagen-galeria3">
+            <img src="img/close.svg" alt="" class="close" onclick="cerrarimagen(this)">
+            <img src="img/zelda7.jpg" alt="" class="imgb">
+        </div>
+        
+        <div class="imagen-light oculto" id="imagen-galeria4">
+            <img src="img/close.svg" alt="" class="close" onclick="cerrarimagen(this)">
+            <img src="img/zelda8.jpg" alt="" class="imgb">
+        </div>
+        
+        <div class="imagen-light oculto" id="imagen-galeria5">
+            <img src="img/close.svg" alt="" class="close" onclick="cerrarimagen(this)">
+            <img src="img/zelda9.jpg" alt="" class="imgb">
+        </div>
+        
+        <div class="imagen-light oculto" id="imagen-galeria6">
+            <img src="img/close.svg" alt="" class="close" onclick="cerrarimagen(this)">
+            <img src="img/zelda10.jpg" alt="" class="imgb">
+        </div>
+        <div class="imagen-light oculto" id="imagen-galeria7">
+            <img src="img/close.svg" alt="" class="close" onclick="cerrarimagen(this)">
+            <img src="img/Zelda5.jpg" alt="" class="imgb">
+        </div>
+    </section>
          <!--Contenedor de mas informacion, tercera parte de la web-->
          <section class="contenedor" id="expertos">
-             <h2 class="subtitulo">Expertos en:</h2>
+             <h2 class="subtitulo">Tambien sabemos de:</h2>
              <section class="experts">
                  <div class="cont-expertos">
-                     <img src="img/Buho.jpg" alt="">
-                     <h3 class="n-expert">Buhos</h3>
+                     <img src="img/clamator.jpg" alt="">
+                     <h3 class="n-expert">Buhos Clamators</h3>
                     </div>
                     <div class="cont-expertos">
-                        <img src="img/Buho.jpg" alt="">
-                        <h3 class="n-expert">Con</h3>
+                        <img src="img/chimango.jpg" alt="">
+                        <h3 class="n-expert">Milvago Chimichima</h3>
                        </div>
                        <div class="cont-expertos">
-                        <img src="img/Buho.jpg" alt="">
-                        <h3 class="n-expert">Sopa</h3>
+                        <img src="img/currucutuu.JPG" alt="">
+                        <h3 class="n-expert" onclick="currucutu(this)">Currucutu</h3>
                        </div>
              </section>
          </section>
@@ -95,17 +126,17 @@
     <footer class="contactos" id="contactos">
         <div class="contenedor footer-content">
             <div class="contactanos">
-                <h2 class="brand">El victor lo hizo</h2>
-                <p>Buhos todos dijo wika</p>
+                <h2 class="brand" onclick="muestramensaje(this)">Taboo Creations</h2>
+                <p onclick="esfino(this)">Una pagina para Zelda, la buho</p>
             </div>
             <div class="redes-sociales">
-                <a href="https://es-la.facebook.com/" class="redes-sociales-icon">
+                <a onclick="yaquestamos(this)" href="https://es-la.facebook.com/" class="redes-sociales-icon">
                 <i class='bx bxl-facebook-square' ></i>
              </a>
-                <a href="https://twitter.com/?lang=es" class="redes-sociales-icon">
+                <a onclick="yaquestamos(this)" href="https://twitter.com/?lang=es" class="redes-sociales-icon">
                     <i class='bx bxl-twitter' ></i>
              </a>
-                <a href="https://www.instagram.com/?hl=es" class="redes-sociales-icon">
+                <a onclick="yaquestamos(this)" href="https://www.instagram.com/?hl=es" class="redes-sociales-icon">
                     <i class='bx bxl-instagram' ></i>
              </a>
             </div>

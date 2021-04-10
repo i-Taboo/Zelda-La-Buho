@@ -37,7 +37,7 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: rgb(153, 132, 105);
+    color: rgb(233, 213, 187);
     font-size: 7vw;
 }
 
@@ -89,9 +89,7 @@ header{
 
 }
 
-.botonmenu:hover{
-    background-image: linear-gradient(135deg, #1f42dd8e 0%, #6221a39a 100%);
-}
+
 
 .oculto{
     transform: translate(110%);
@@ -151,11 +149,12 @@ margin-bottom: 10px;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    font-size: 20px;
 }
 
 .contenedor-servicio img{
     width: 45%;
-
+    cursor: pointer;
 }
 
 .checklist-servicio{
@@ -189,9 +188,21 @@ margin-bottom: 10px;
     flex-wrap: wrap;
 }
 
+.contenedor-galeria img{
+    max-height: 20vw;
+    max-width: 25vw;
+    cursor: pointer;
+}
+
+.contenedor-galeria img:hover{
+    background-color: #9f8ad0;
+}
+
+
 .imgb1{
     width: 70%;
 }
+
 
 .img-galeria{
     object-fit: cover;
@@ -217,6 +228,10 @@ margin-bottom: 10px;
 .imagen-light{
      transform: scale(0);
     transition: transform .3s .2s;
+}
+
+.imgb{
+    max-height: 80%;
 }
 
 
@@ -259,6 +274,7 @@ margin-bottom: 10px;
     width: 95%;
     display: block;
     margin:0 auto;
+    max-height: 12vw;
 }
 
 .n-expert{
